@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Clock</title>
+  
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAGABoAwAAFgAAACgAAAAQAAAAIAAAAAEAGAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///+Ae3YAAACAe3aAe3YAAACAe3b///8AAAAAAAAAAAAAAAAAAAAAAAAAAAD///+Ae3aAe3aAe3aAe3aAe3aAe3aAe3aAe3b///8AAAAAAAAAAAAAAAAAAAD///+Ae3YAAACAe3aAe3aAe3aAe3aAe3aAe3YAAACAe3b///8AAAAAAAAAAAD///+Ae3aAe3aAe3aAe3aAe3aAe3aAe3aAe3aAe3aAe3aAe3aAe3b///8AAAAAAAD///8AAACAe3aAe3aAe3aAe3aAe3aAe3aAe3aAe3aAe3aAe3YAAAD///8AAAAAAAD///+Ae3aAe3aAe3aAe3aAe3YAAAAAAAAAAAAAAAAAAACAe3aAe3b///8AAAAAAAD///+Ae3aAe3aAe3aAe3aAe3YAAAAAAAAAAAAAAAAAAACAe3aAe3b///8AAAAAAAD///8AAACAe3aAe3aAe3aAe3YAAAAAAACAe3aAe3aAe3aAe3YAAAD///8AAAAAAAD///+Ae3aAe3aAe3aAe3aAe3YAAAAAAACAe3aAe3aAe3aAe3aAe3b///8AAAAAAAAAAAD///+Ae3YAAACAe3aAe3YAAAAAAACAe3aAe3YAAACAe3b///8AAAAAAAAAAAAAAAAAAAD///+Ae3aAe3aAe3aAe3aAe3aAe3aAe3aAe3b///8AAAAAAAAAAAAAAAAAAAAAAAAAAAD///+Ae3YAAACAe3aAe3YAAACAe3b///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" type="image/x-icon" />
+  <script type="module" crossorigin src="/assets/index-b612065d.js"></script>
+  <link rel="stylesheet" href="/assets/index-239e9dfc.css">
+</head>
+
+
+<body>
+  <div id=clockbody>
+    <p id="top"></p>
+    <h2 id="date"></h2>
+    <h1 id="clock"></h1>
+    <div id="inputboxes">
+      <input id="timeinputboxH" type="number" placeholder="H" min="1" max="12"></input>
+      <input id="timeinputboxM" type="number" placeholder="M" min="0" max="59"></input>
+      <input id="timeinputboxS" type="number" placeholder="S" min="0" max="59"></input>
+      <input id="ampm" oninput="this.value = this.value.toUpperCase()" type="text" placeholder="AM/PM"></input>
+      <button id="enter">Set Alarm</button>
+    </div>
+    <p id="reminder"></p>
+    <p id="bottom"></p>
+    <div class="pendulum-base">
+      <div class="pendulum"></div>
+    </div>
+    
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  </div>
+
+</body>
+
+</html>
